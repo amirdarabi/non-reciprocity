@@ -16,7 +16,7 @@ for i=1:size
     xp(i)=(-.05+.8*(i-1)/(size-1));
     yp(i)=(.1*(i-1)/(size-1));%(.1*(i-1)/(size-1)-.05);
 end
-[Bp,Be,k,d,N,diaa,Rank,si]=GRIN_Leamy(F0,omega,x,BC,row,S);
+[Bp,Be,k,d,N,diaa,Rank,si]=GRIN(F0,omega,x,BC,row,S);
 w_sca=zeros(size,size);
 [X,Y] = meshgrid(xp,yp);
 Min_b=(S-1)/2;
